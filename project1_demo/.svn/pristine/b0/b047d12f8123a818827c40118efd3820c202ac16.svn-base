@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<Log log = "com.briup.environment.util.LogImp">
+	<logAddress>C://Users//Administrator//workspace//project1_demo//log4j.properties</logAddress>
+	</Log>
+	<Server server = "com.briup.environment.server.ServerImp">
+	<port>6666</port>
+	</Server>
+	<Client client = "com.briup.environment.client.ClientImp2">
+	<host>127.0.0.1</host>
+	</Client>
+	<DBStore dbStore = "com.briup.environment.server.DBStoreImp">
+	</DBStore>
+	<Gather gather = "com.briup.environment.client.GatherImp">
+	<gatherAddress>data/radwtmp</gatherAddress>
+	</Gather>
+	<BackUP backup = "com.briup.environment.util.BackUPImp"></BackUP>
+</configuration>
